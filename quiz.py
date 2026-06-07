@@ -149,5 +149,16 @@ for question in questions:
 
     question_number += 1
 
+# FINAL RESULTS
+
+print("\n" + "=" * 50)
+print("              QUIZ COMPLETE")
+print("=" * 50)
+
+print(f"Your Score: {score}/{len(questions)}")
+
+percentage = (score / len(questions)) * 100
+
+print(f"Percentage: {percentage:.0f}%")
 
 
