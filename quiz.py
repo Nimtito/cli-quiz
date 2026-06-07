@@ -103,4 +103,18 @@ questions = [
     }
 ]
 
+# SHUFFLE QUESTIONS
+
+random.shuffle(questions)
+
+# QUIZ INTRODUCTION
+
+
+print("=" * 50)
+print("      WELCOME TO THE PYTHON QUIZ GAME")
+print("=" * 50)
+
+score = 0
+question_number = 1
+
 
