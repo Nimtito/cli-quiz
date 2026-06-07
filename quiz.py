@@ -139,6 +139,15 @@ for question in questions:
         except ValueError:
             print("Invalid input!")
             print("Please enter A, B, C, or D.")
+ # Check answer
+    if user_answer == question["answer"]:
+        print("Correct!")
+        score += 1
+    else:
+        print("Incorrect!")
+        print(f"The correct answer is {question['answer']}.")
+
+    question_number += 1
 
 
 
