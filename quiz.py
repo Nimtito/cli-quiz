@@ -126,5 +126,19 @@ for question in questions:
     for option, choice in question["choices"].items():
         print(f"{option}. {choice}")
 
+ # Input validation using try/except
+    while True:
+        try:
+            user_answer = input("\nEnter your answer (A/B/C/D): ").upper()
+
+            if user_answer not in ["A", "B", "C", "D"]:
+                raise ValueError
+
+            break
+
+        except ValueError:
+            print("Invalid input!")
+            print("Please enter A, B, C, or D.")
+
 
 
