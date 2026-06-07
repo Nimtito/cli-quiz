@@ -161,4 +161,18 @@ percentage = (score / len(questions)) * 100
 
 print(f"Percentage: {percentage:.0f}%")
 
+# FEEDBACK SECTION
+
+
+if percentage >= 80:
+    print("Feedback: Excellent!")
+elif percentage >= 50:
+    print("Feedback: Good Job!")
+else:
+    print("Feedback: Try Again!")
+
+print("\nThank you for playing!")
+
+
+
 
