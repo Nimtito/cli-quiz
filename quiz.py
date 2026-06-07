@@ -117,4 +117,14 @@ print("=" * 50)
 score = 0
 question_number = 1
 
+for question in questions:
+
+    print(f"\nQuestion {question_number}")
+    print(question["question"])
+
+    # Display choices
+    for option, choice in question["choices"].items():
+        print(f"{option}. {choice}")
+
+
 
